@@ -10,7 +10,7 @@ void setup()
   lcd.begin(16,2);
   
   lcd.setCursor(0,0);
-  lcd.print(" Street LIGHT ");
+  lcd.print(" TRIP ZOO ");
 
   pinMode(10, OUTPUT);
 
@@ -29,13 +29,13 @@ void loop()
  {
     digitalWrite(10, LOW);
     lcd.setCursor(0,1);
-    lcd.print("  LIGHT OFF    ");
+    lcd.print(" LUZES DESLIGADO   ");
   } 
 else
  {
     digitalWrite(10, HIGH);
     lcd.setCursor(0,1);
-    lcd.print("  LIGHT ON     ");
+    lcd.print("LUZES LIGADO    ");
   }
   
   delay(10); // Delay a little bit to improve simulation performance
